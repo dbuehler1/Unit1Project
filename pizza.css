@@ -42,9 +42,7 @@ html{
     background-image: url("pizza-4952509_1280.jpg");
 
 }
-#OrderInfo{
-
-
+#OrderInfo fieldset{
     width: 400px;
 }
 #OICrust{
