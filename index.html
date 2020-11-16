@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="pizza.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src = "code.js"></script>
+</head>
+<body>
+<h1>Pizza Requisition Lab</h1>
+<div id = tabs>
+    <button id = Step1>Step 1</button>
+    <button id = Step2>Step 2</button>
+    <button id = Step3>Step 3</button>
+</div>
+
+<form>
+    <div id = PizzaDetails>
+        <fieldset id = PizzaSize>Size<br>
+            <input type="radio" name="size" id = large checked = checked value = 12>
+            <label for="large">Large</label>
+            <br>
+            <input type="radio" name="size" id = medium value = 9>
+            <label for="medium">Medium</label>
+            <br>
+            <input type="radio" name="size" id = small value = 7>
+            <label for="small">Small</label>
+        </fieldset>
+
+        <fieldset id= CrustType>Crust Style<br>
+            <input type="radio" name="crust" id = thin checked = checked>
+            <label for="thin">Thin</label>
+            <br>
+            <input type="radio" name="crust" id = pan>
+            <label for="pan">Pan</label>
+            <br>
+            <input type="radio" name="crust" id = gluten>
+            <label for="gluten">Gluten Free</label>
+        </fieldset>
+
+        <fieldset id = Meats>Meats<br>
+            <input type="checkbox" name="meat" id = Bacon>
+            <label for="Bacon">Bacon</label>
+            <br>
+            <input type="checkbox" name="meat" id = Sausage>
+            <label for="Sausage">Sausage</label>
+            <br>
+            <input type="checkbox" name = "meat" id = Ham>
+            <label for="Ham">Ham</label>
+        </fieldset>
+
+        <fieldset id= Veggies>Vegetables<br>
+            <input type="checkbox" name="Veggies" id = broccoli>
+            <label for="broccoli">Broccoli</label>
+            <br>
+            <input type="checkbox" name="Veggies" id = mushroom>
+            <label for="mushroom">Mushroom</label>
+            <br>
+            <input type="checkbox" name="Veggies" id = olives>
+            <label for="olives">Olives</label>
+        </fieldset>
+    </div>
+
+    <div id = DeliveryInfo>Delivery Information<br>
+        <fieldset><header>Details</header><br>
+        <label for = name>Name</label>
+        <input type = text name = "delivery" id = name>
+        <br><br>
+        <label for = Address>Address</label>
+        <input type = text name = "delivery" id = Address>
+        <br><br>
+        <label for = Phone>Phone</label>
+        <input type = text name = "delivery" id = Phone>
+    </fieldset>
+    </div>
+
+    <div id = OrderInfo>
+        <fieldset>
+            <h2>Order</h2>
+            <h3 id = OISize></h3>
+            <h3 id = OICrust></h3>
+            <h3 id = OIMeats></h3>
+            <h3 id = OIVeggies></h3>
+        </fieldset>
+        <fieldset>
+            <h2>Customer Information</h2>
+            <h3 id = CIName></h3>
+            <h3 id = CIAddress></h3>
+            <h3 id = CIPhone></h3>
+        </fieldset>
+        <fieldset>
+            <h2>Billing</h2>
+            <h3 id = BISubotal></h3>
+            <h3>Delivery Fee: $2</3>
+            <h3>Tax Rate: 5.1%</h3>
+            <h3 id = BITotal></h3>
+        </fieldset>
+
+        <button type="submit">Place Order</button>
+    </div>
+</form>
+
+
+
+
+
+</body>
+</html>
