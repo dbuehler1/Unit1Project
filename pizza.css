@@ -60,3 +60,6 @@ html{
 #CIAddress, #CIName,#CIPhone{
     color: gray;
 }
+#submit{
+    margin-left: 500px;
+}
